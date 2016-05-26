@@ -1,0 +1,277 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "UTF-8";
+/*----------------------------------------
+
+	- cmn_title
+	- sationery
+
+-----------------------------------------*/
+
+/*----------------------------------------
+	cmn_title
+-----------------------------------------*/
+
+#cmn_title .cmn_h1 {
+	background-image: url(../img/cmn_title02_bg.jpg);
+}
+
+@media screen and (max-width: 640px) {/*SP*/
+
+#cmn_title .cmn_h1 {
+	background-image: url(../img/cmn_title02_bg@sp.jpg);
+}
+
+}
+
+
+/*----------------------------------------
+	gallery
+-----------------------------------------*/
+
+/* new */
+#gallery li.new a:after {
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: 50;
+	top: -6px;
+	left: -6px;
+	width: 40px;
+	height: 40px;
+	background: url(../img/cmn_main_new.png) no-repeat center;
+	background-size: 100% 100%;
+}
+
+/* cbox */
+#gallery .cbox {
+	display: none;
+}
+
+@media screen and (min-width: 641px) {/*PC*/
+
+#gallery li img.pic { width: 100%; height: auto; }
+
+#gallery {
+	width: 980px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+#gallery p.txt {
+	margin-top: 45px;
+	font-size: 16px;
+	line-height: 2;
+	text-align: center;
+}
+
+#gallery li {
+	float: left;
+	width: 236px;
+	margin: 50px 0 0 136px;
+}
+
+#gallery li:nth-child(3n+1) {
+	clear: both;
+	margin-left: 0;
+}
+
+/* splink */
+#gallery .splink a {
+  position: relative;
+  display: block;
+	width: 236px;
+	height: 236px;
+	background-color: #fff;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#gallery .splink a + a {
+	display: none;
+}
+
+#gallery .splink a:before {
+	content: "";
+  position: absolute;
+	z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	border: solid 4px #fff;
+}
+
+#gallery .splink a .cv {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	color: #fff;
+	line-height: 236px;
+	text-align: center;
+	background: url(../img/top_recipe_bg.png) repeat;
+	border: solid 4px #a4948d;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+
+#gallery .splink a .cv p:after {
+	content: "";
+	display: inline-block;
+	width: 9px;
+	height: 12px;
+	margin-left: 10px;
+	background: url(../img/cmn_ya_next_white.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+#gallery .splink .picwp {
+	overflow: hidden;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 230px;
+	height: 230px;
+}
+
+#gallery .splink a img.pic {
+	-webkit-transition: -webkit-transform 1s ease-out;
+	-moz-transition: transform 1s ease-out;
+	-ms-transition: transform 1s ease-out;
+	-o-transition: transform 1s ease-out;
+	transition: transform 1s ease-out;
+	-webkit-transform: scale(1), translate3d(0, 0, 0);
+	-moz-transform: scale(1), translate3d(0, 0, 0);
+	-ms-transform: scale(1), translate3d(0, 0, 0);
+	transform: scale(1), translate3d(0, 0, 0);
+}
+
+#gallery .splink a:hover .cv {
+  opacity: 1;
+}
+
+#gallery .splink a:hover .pic {
+	-webkit-transition: transform 0.8s ease-out;
+	-moz-transition: transform 0.8s ease-out;
+	-ms-transition: transform 0.8s ease-out;
+	transition: transform 0.8s ease-out;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/* txt */
+#gallery .splink + p {
+	margin-top: 8px;
+}
+
+#gallery .splink + p span {
+	 font-size: 10px;
+}
+
+/* cbox */
+.cbox {
+	width: 640px;
+}
+
+.cbox p {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.cbox p img {
+	width: 600px;
+	height: auto;
+}
+
+.cbox p + p {
+	padding-top: 16px;
+}
+
+.cbox p + p + p {
+	padding-top: 8px;
+}
+
+}
+
+@media screen and (max-width: 640px) {/*SP*/
+
+#gallery li img.pic { width: 100%; height: auto; }
+
+#gallery {
+	margin: 0 20px;
+}
+
+#gallery p.txt {
+	margin-top: 24px;
+}
+
+#gallery li {
+	clear: both;
+	float: left;
+	width: 46%;
+	margin-top: 26px;
+}
+
+#gallery li:nth-child(even) {
+	clear: none;
+	float: right;
+}
+
+#gallery .splink a {
+  position: relative;
+  display: block;
+}
+
+#gallery .splink a .cv {
+	display: none;
+}
+
+#gallery .splink a .picwp {
+	border: solid 4px #fff;
+}
+
+/* txt */
+#gallery .splink + p {
+	margin-top: 4px;
+}
+
+#gallery .splink + p span {
+	 font-size: 10px;
+}
+
+/* new */
+#gallery li.new a:after {
+	top: -5px;
+	left: -5px;
+	width: 23%;
+	height: 23%;
+}
+
+/* cbox */
+.cbox p {
+	margin: 0 10px;
+}
+
+.cbox p img {
+	width: 100%;
+	height: auto;
+}
+
+.cbox p + p {
+	margin: 0 20px;
+	padding-top: 16px;
+}
+
+.cbox p + p + p {
+	margin: 0 20px;
+	padding-top: 8px;
+}
+
+}

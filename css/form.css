@@ -1,0 +1,261 @@
+.form {
+    padding-bottom: 40px;
+}
+ .form dl.form__body--left {
+    float: left;
+    width: 370px;
+}
+
+
+ main>.inner {
+    max-width: 840px;
+}
+ .form dl dd {
+    margin-bottom: 16px;
+}
+.form .form__wrap:after {
+    content: ".";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+
+    padding: 0;
+font-size: inherit;
+    line-height: inherit;
+    box-sizing: inherit;
+
+}
+
+.contact .form dl dd:last-of-type {
+    margin-bottom: 0;
+}
+.contact .form dl.form__body--right {
+    float: right;
+    width: 420px;
+}
+
+*, ::before, ::after {
+    border-style: solid;
+    border-width: 0;
+ 
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1;
+    letter-spacing: 2px;
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font-family: 'Noto Sans Japanese';
+    font-weight: 300;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+#wrapper {
+    position: relative;
+    overflow: hidden;
+}
+small {
+    font-size: 75%;
+}
+ .form dl dt span {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 10px;
+    background-color: #ff6a00;
+    color: #fff;
+    width: 31px;
+    height: 17px;
+    text-align: center;
+    line-height: 17px;
+    font-style: normal;
+    margin-top: 5px;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+ .form dl dt small {
+    display: inline-block;
+    vertical-align: top;
+    color: #999;
+    font-weight: normal;
+    margin-left: 10px;
+    margin-right: 18px;
+    margin-top: 5px;
+}
+.form h1 {
+    text-align: center;
+    position: relative;
+    font-size: 36px;
+    font-size: 3.6rem;
+    font-weight: 300;
+    letter-spacing: 7px;
+    margin-bottom: 36px;
+}
+
+ .form h1 span {
+    display: block;
+    padding-top: 20px;
+    font-size: 14px;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+}
+ .form h1 :after {
+    content: '';
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 6px;
+    width: 62px;
+    background-color: #000;
+    border-radius: 3px;
+}
+
+ .form .form__wrap {
+    position: relative;
+    zoom: 1;
+}
+button, input, select, textarea {
+    color: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    -webkit-user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border: 2px inset;
+}
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 12.5278px Arial;
+}
+main {
+    display: block;
+}
+
+* {
+    font-size: inherit;
+    line-height: inherit;
+}
+ .form dl dt {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+dd {
+    display: block;
+    -webkit-margin-start: 40px;
+}
+label {
+    cursor: default;
+}
+::selection {
+    background-color: #B3D4FC;
+    color: #4c2b03;
+    text-shadow: none;
+}
+ .form dl.form__body--right {
+    float: right;
+    width: 420px;
+}
+
+.form .form__btn {
+    width: 280px;
+    text-align: center;
+    margin: 76px auto 0;
+}
+
+ .form .form__btn button {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+
+ .form .form__btn a,  .form .form__btn button {
+    position: relative;
+    display: block;
+    color: #26395e;
+    border: 3px solid #26395e;
+    text-decoration: none;
+    -webkit-transition: 0.4s all cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.4s all cubic-bezier(0.25, 0.1, 0.25, 1);
+    padding: 14px 20px 14px 22px;
+        letter-spacing: 1px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+ .form dl dd textarea {
+    width: 100%;
+    border: 1px solid #999;
+    padding: 16px;
+}
+ .form dl dd input {
+    width: 100%;
+    border: 1px solid #999;
+    padding: 6px 16px;
+}
+@media screen and (min-width: 991px){
+ .form .form__btn a:hover,  .form .form__btn button:hover {
+    background-color: #26395e;
+    border-color: #26395e;
+    color: #fff;
+}
+}
+.form h1:not(span) {
+    font-style: italic;
+}
+
+.inner {
+    position: relative;
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+ .form .form__btn a:after, .contact .form .form__btn button:after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 13px;
+    height: 3px;
+    width: 16px;
+    border-radius: 3px;
+    background-color: #26395e;
+}

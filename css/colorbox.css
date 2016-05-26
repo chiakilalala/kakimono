@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+<!-- --> @charset "UTF-8";
+#colorbox,
+#cboxOverlay,
+#cboxWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999999999;
+    overflow: hidden;
+}
+
+#cboxOverlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#cboxMiddleLeft,
+#cboxBottomLeft {
+    clear: left;
+}
+
+#cboxContent {
+    position: relative;
+}
+
+#cboxLoadedContent {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#cboxTitle {
+    margin: 0;
+}
+
+#cboxLoadingOverlay,
+#cboxLoadingGraphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#cboxPrevious,
+#cboxNext,
+#cboxClose,
+#cboxSlideshow {
+    cursor: pointer;
+}
+
+.cboxPhoto {
+    float: left;
+    margin: auto;
+    border: 0;
+    display: block;
+    max-width: none;
+    -ms-interpolation-mode: bicubic;
+}
+
+.cboxIframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+}
+
+#colorbox,
+#cboxContent,
+#cboxLoadedContent {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+
+#cboxLoadedContent {
+    overflow-x: hidden!important;
+}
+
+#cboxOverlay {
+    background: #000;
+}
+
+#colorbox {
+    outline: 0;
+}
+
+#cboxContent {
+    padding: 20px 0 55px 0;
+    background: #fff;
+}
+
+.cboxIframe {
+    background: #fff;
+}
+
+#cboxError {
+    width: 350px;
+    padding: 80px 0 40px 0;
+    text-align: center;
+}
+
+#cboxLoadedContent {
+    background: #fff;
+}
+
+#cboxLoadingGraphic {
+    background: url(../img/cmn_colorbox_loading.gif) no-repeat center center;
+}
+
+#cboxPrevious,
+#cboxNext,
+#cboxSlideshow,
+#cboxClose {
+    outline: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    width: auto;
+    background: none;
+}
+
+#cboxPrevious:active,
+#cboxNext:active,
+#cboxSlideshow:active,
+#cboxClose:active {
+    outline: 0;
+}
+
+#cboxTitle {
+    display: none;
+}
+
+#cboxSlideshow {
+    display: none;
+}
+
+#cboxPrevious {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: 26px;
+    height: 55px;
+    margin-top: -27px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(../img/cmn_colorbox_controls.png) no-repeat left 0;
+    background-size: auto 100%;
+}
+
+#cboxNext {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 26px;
+    height: 55px;
+    margin-top: -27px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(../img/cmn_colorbox_controls.png) no-repeat right 0;
+    background-size: auto 100%;
+}
+
+#cboxClose {
+    display: block;
+    position: absolute;
+    bottom: 13px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#cboxClose:after {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin: 0 0 4px 4px;
+    background: url(../img/cmn_colorbox_close.gif) no-repeat right center;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 640px) {
+    /*SP*/
+    #cboxContent {
+        padding: 10px 0 42px 0;
+        background: #fff;
+    }
+    #cboxPrevious {
+        left: 10px;
+        width: 19px;
+        height: 40px;
+        margin-top: -20px;
+    }
+    #cboxNext {
+        right: 10px;
+        width: 19px;
+        height: 40px;
+        margin-top: -20px;
+    }
+    #cboxClose {
+        bottom: 12px;
+        font-size: 10px;
+    }
+    #cboxClose:after {
+        width: 9px;
+        height: 9px;
+        margin: 0 0 2px 3px;
+    }
+    #cboxLoadedContent img {
+        zoom: 1;
+    }
+}

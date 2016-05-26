@@ -1,0 +1,556 @@
+@charset "UTF-8";
+/*----------------------------------------
+
+	- cmn_title
+	- list
+	- detail
+
+-----------------------------------------*/
+
+/*----------------------------------------
+	cmn_title
+-----------------------------------------*/
+
+#cmn_title .cmn_h1 {
+	background-image: url(../img/cmn_title_bg.jpg);
+}
+
+@media screen and (max-width: 640px) {/*SP*/
+
+#cmn_title .cmn_h1 {
+	background-image: url(../img/cmn_title_bg@sp.jpg);
+}
+
+}
+
+
+/*----------------------------------------
+	list
+-----------------------------------------*/
+
+#list .sub em {
+	color: #4496ae;
+}
+
+#list .sub li em {
+	margin-left: 4px;
+}
+
+/* new */
+#list .sub > ul > li.new a p:first-child {
+	position: relative;
+}
+
+#list .sub > ul > li.new a p:first-child:before {
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: 10;
+	top: -6px;
+	left: -6px;
+	width: 40px;
+	height: 40px;
+	background: url(../../img/cmn_main_new.png) no-repeat center;
+	background-size: 100% 100%;
+}
+
+@media screen and (min-width: 641px) {/*PC*/
+
+#list .sub li img { width: 172px; height: 172px; }
+
+#list {
+	width: 980px;
+	margin: 0 auto;
+}
+
+#list .sub > ul > li {
+	float: left;
+	width: 172px;
+	margin: 30px 0 0 30px;
+}
+
+#list .sub > ul > li:nth-child(5n+1) {
+	clear: both;
+	margin-left: 0;
+}
+
+#list .sub > ul > li a {
+	display: inline-block;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	backface-visibility: hidden;
+	transition: color .3s;
+	position: relative;
+	display: block;
+	color: #380902;
+}
+
+#list .sub > ul > li a:hover {
+	color: #4496ae;
+}
+
+#list .sub > ul > li a p:first-child:after {
+	display: inline-block;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	backface-visibility: hidden;
+	transition: background .3s;
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	width: 172px;
+	height: 172px;
+	background: rgba(255,255,255,0);
+}
+
+#list .sub > ul > li a:hover p:first-child:after {
+	background: rgba(255,255,255,0.35);
+}
+
+#list .sub > ul > li a p + p {
+	margin-top: 10px;
+}
+
+/* ex */
+#list .sub .ex .txt {
+	float: left;
+	width: 690px;
+}
+
+#list .sub .ex p.fin {
+	float: left;
+	width: 690px;
+	margin-top: 20px;
+	font-size: 12px;
+}
+
+#list .sub .ex ul {
+	float: right;
+	width: 245px;
+}
+
+#list .sub .ex li + li {
+	margin-top: 16px;
+}
+
+}
+
+@media screen and (max-width: 640px) {/*SP*/
+
+#list .sub > ul > li img { width: 100%; height: auto; }
+
+#list {
+	margin: 0 20px;
+}
+
+#list .cmn_h2 + p br {
+	display: none;
+}
+
+#list .sub > ul > li {
+	width: 46%;
+	clear: both;
+	float: left;
+	margin-top: 18px;
+}
+
+#list .sub > ul > li:nth-child(even) {
+	clear: none;
+	float: right;
+}
+
+#list .sub > ul > li a {
+	display: block;
+	color: #380902;
+}
+
+#list .sub > ul > li a p + p {
+	margin-top: 8px;
+}
+
+/* new */
+#list .sub > ul > li.new a p:first-child:before {
+	top: -5px;
+	left: -5px;
+	width: 23%;
+	height: 23%;
+}
+
+/* ex */
+#list .sub .ex p.fin {
+	margin-top: 10px;
+	font-size: 11px;
+}
+
+#list .sub .ex ul {
+	margin-top: 20px;
+	text-align: center;
+}
+
+#list .sub .ex li + li {
+	margin-top: 10px;
+}
+
+}
+
+
+/*----------------------------------------
+	detail
+-----------------------------------------*/
+
+#detail .sub em {
+	color: #4496ae;
+}
+
+#detail .sub li p em {
+	padding-left: 4px;
+}
+
+#detail .sub li p em.new {
+	padding-left: 10px;
+	color: #f08200;
+}
+
+@media screen and (min-width: 641px) {/*PC*/
+
+#detail .sub .des dl dt img { width: 462px; height: auto; }
+#detail .sub .goods li h2 + p img { width: 470px; height: auto; }
+
+#detail {
+	width: 980px;
+	margin: 0 auto;
+}
+
+#detail .sub p.mainpic {
+	padding-top: 56px;
+	text-align: center;
+}
+
+#detail .sub p.mainpic img {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	box-sizing: content-box;
+	border: solid 4px #fff;
+}
+
+#detail .sub p.ex {
+	font-size: 12px;
+}
+
+#detail .sub p + p.ex {
+	margin-top: 20px;
+}
+
+#detail .sub p.ex + p.ex {
+	margin-top: 8px;
+}
+
+/* description */
+#detail .sub .des {
+	margin-top: 10px;
+}
+
+#detail .sub .des dl h2 {
+	margin-top: 45px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#detail .sub .des dl h2 + p {
+	margin-top: 40px;
+}
+
+#detail .sub .des dl p + p {
+	margin-top: 20px;
+}
+
+#detail .sub .des dl dt {
+	border: solid 4px #fff;
+}
+
+#detail .sub .des dl.cf {
+	width: 980px;
+	margin-top: 50px;
+}
+
+#detail .sub .des dl.cf dt {
+	float: left;
+}
+
+#detail .sub .des dl.cf dd {
+	float: right;
+	width: 482px;
+}
+
+#detail .sub .des dl.li_l {
+	float: left;
+	width: 470px;
+	margin-top: 50px;
+}
+
+#detail .sub .des dl.li_r {
+	float: right;
+	width: 470px;
+	margin-top: 50px;
+}
+
+#detail .sub .des dl.li_l dd p:first-child,
+#detail .sub .des dl.li_r dd p:first-child {
+	margin-top: 16px;
+}
+
+#detail .sub .des dl.clear {
+	clear: both;
+}
+
+/* goods */
+#detail .sub .goods {
+	margin-top: 36px;
+}
+
+#detail .sub .goods li {
+	float: left;
+	width: 470px;
+	margin: 50px 0 0 40px;
+}
+
+#detail .sub .goods li:nth-child(2n+1) {
+	clear: both;
+	margin-left: 0;
+}
+
+#detail .sub .goods li h2 {
+	margin-bottom: 20px;
+	padding: 8px 26px;
+	color: #fff;
+	font-size: 16px;
+	background-color: #954d29;
+}
+
+#detail .sub .goods li p {
+	margin-top: 16px;
+}
+
+#detail .sub .goods li p + p {
+	margin-top: 8px;
+}
+
+#detail .sub .goods li h2 + p + p {
+	margin-top: 16px;
+}
+
+#detail .sub .goods li dl + p {
+	margin-top: 16px;
+}
+
+#detail .sub .goods li dl {
+	margin-top: 20px;
+}
+
+#detail .sub .goods li dt {
+	float: left;
+}
+
+#detail .sub .goods li dd {
+	float: right;
+	width: 226px;
+	font-size: 12px;
+}
+
+/* btn */
+#detail .sub .btn {
+	margin-top: 70px;
+	text-align: center;
+}
+
+#detail .sub .btn li + li {
+	margin-top: 16px;
+}
+
+}
+
+@media screen and (max-width: 640px) {/*SP*/
+
+#detail .sub p.mainpic img,
+#detail .sub .des dl dt img,
+#detail .sub .goods li h2 + p img,
+#detail .sub .goods li dt img { width: 100%; height: 100%; }
+
+#detail {
+	margin: 0 20px;
+}
+
+#detail .sub .cmn_h3 + p br {
+	display: none;
+}
+
+#detail .sub p.mainpic {
+	margin-top: 18px;
+	border: solid 4px #fff;
+}
+
+#detail .sub p.ex {
+	font-size: 11px;
+}
+
+#detail .sub p + p.ex {
+	margin-top: 10px;
+}
+
+#detail .sub p.ex + p.ex {
+	margin-top: 8px;
+}
+
+/* description */
+#detail .sub .des {
+	margin-top: 10px;
+}
+
+#detail .sub .des dl {
+	margin-top: 22px;
+}
+
+#detail .sub .des dl h2 {
+	margin-top: 18px;
+	font-weight: bold;
+}
+
+#detail .sub .des dl p {
+	margin-top: 10px;
+}
+
+#detail .sub .des dl dt {
+	border: solid 4px #fff;
+}
+
+/* goods */
+#detail .sub .goods {
+	margin-top: 10px;
+}
+
+#detail .sub .goods li h2 {
+	margin: 26px 0 15px 0;
+	padding: 7px 15px;
+	color: #fff;
+	background-color: #954d29;
+}
+
+#detail .sub .goods li p {
+	margin-top: 10px;
+}
+
+#detail .sub .goods li p + p {
+	margin-top: 6px;
+}
+
+#detail .sub .goods li h2 + p + p {
+	margin-top: 10px;
+}
+
+#detail .sub .goods li dl + p {
+	margin-top: 10px;
+}
+
+#detail .sub .goods li dl {
+	margin-top: 15px;
+}
+
+#detail .sub .goods li dt {
+	float: left;
+	width: 40%;
+	display: block;
+}
+
+#detail .sub .goods li dd {
+	float: right;
+	width: 55%;
+}
+
+/* btn */
+#detail .sub .btn {
+	margin-top: 35px;
+	text-align: center;
+}
+
+#detail .sub .btn li + li {
+	margin-top: 10px;
+}
+
+}
+
+/*----------------------------------------
+	jPages
+-----------------------------------------*/
+
+.holder {
+	margin-top: 40px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.holder.sp {
+	margin-bottom: -20px;
+}
+
+.holder a {
+	cursor: pointer;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: 0 15px;
+	font-size: 18px;
+	line-height: 40px;
+	text-align: center;
+	border: solid 1px #954d29;
+}
+
+.holder a.jp-current {
+	cursor: default;
+	color: #fff!important;
+	background-color: #c49177!important;
+}
+
+.holder a.jp-previous,
+.holder a.jp-next {
+	display: none!important;
+}
+
+@media screen and (min-width: 641px) {/*PC*/
+
+.holder a {
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	backface-visibility: hidden;
+	transition: background .5s;
+}
+
+.holder a:hover {
+	color: #954d29;
+	background-color: #fff;
+}
+
+}
+
+@media screen and (max-width: 640px) {/*SP*/
+
+.holder {
+	margin-top: 30px;
+	padding-top: 0;
+}
+
+.holder.sp {
+	margin-bottom: -6px;
+}
+
+.holder a {
+	width: 36px;
+	height: 36px;
+	margin: 0 6px;
+	font-size: 15px;
+	line-height: 36px;
+}
+
+}

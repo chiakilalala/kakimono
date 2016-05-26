@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style type="text/css">
+	
+  @use cssnext;
+@use postcss-nested;
+
+:root {
+  --t-small-jump: -25px;
+  --t-large-jump: -50px;
+}
+
+body {
+  
+  display: flex;
+  min-height: 100vh;
+}
+
+.beer-wrap {
+  display: flex;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  animation: jump 1.5s ease infinite;
+}
+
+.beer {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(var(--t-small-jump));
+  }
+  15% {
+    transform: translateY(var(--t-small-jump));
+  }
+  25% {
+    transform: translateY(0);
+  }
+  35% {
+    transform: translateY(0);
+  }
+  35% {
+    transform: translateY(var(--t-small-jump));
+  }
+  40% {
+    transform: translateY(var(--t-small-jump));
+  }
+  50% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(var(--t-large-jump));
+  }
+  80% {
+    transform: translateY(var(--t-large-jump));
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  55% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+	<div class="beer-wrap"><img src="images/logo1.png" class="beer">
+	</div>
+</body>
+</html>
